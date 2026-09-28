@@ -1,28 +1,27 @@
 // Write your code here
 
 // Product Inventory Array
-let products = ["laptop", "phone", "headphones", "monitor"];
+let products = ["Laptop", "Phone", "Headphones", "Monitor"];
 
-// Access Product Information
-function accessFirstProduct() {
-  console.log(products[0]);
+// Log the first product
+function logFirstProduct() {
+    console.log(products[0]);
 }
 
-// Add a New Product to the Array
+// Add a new product
 function addProduct(productName) {
-  products.push(productName);
+    products.push(productName);
 }
 
-// Change the Name of a Product
-function changeProduct(position, newName) {
-  products[position] = newName;
+// Update a product name
+function updateProductName(index, newName) {
+    products[index] = newName;
 }
 
-// Remove a Product from Array
+// Remove the last product
 function removeLastProduct() {
-  products.pop();
+    products.pop();
 }
-
 // Export the necessary parts for testing
 module.exports = {
   logFirstProduct: typeof logFirstProduct !== 'undefined' ? logFirstProduct : undefined,
